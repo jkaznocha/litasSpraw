@@ -1,6 +1,6 @@
 body
 {
-    background-color:rgb(3, 3, 29);
+    background-image: url('tlo.jpg');
     font-family: 'Coda', cursive;
     font-size:20px;
 
@@ -15,43 +15,52 @@ header
     margin-left: 400px;
     margin-right: 400px;
     margin-top:50px;
-    background-color:rgb(56, 211, 250);
-    border-top: rgb(59, 116, 223) ridge 4px;
-    border-left:  rgb(59, 116, 223) ridge 4px;
-    border-right:  rgb(59, 116, 223) ridge 4px;
+    background: linear-gradient(to bottom, rgba(135,192,227,1) 0%, rgba(135,192,227,1) 7%, 
+    rgba(26,151,209,1) 50%, rgba(145,197,227,1) 95%, rgba(145,197,227,1) 100%);
+    border-top: rgb(32, 65, 126) ridge 4px;
+    border-left:  rgb(32, 65, 126) ridge 4px;
+    border-right:  rgb(32, 65, 126) ridge 4px;
     padding-left:10px;
     border-radius: 3px;
 }
 
 article
-{
+{   
+    background-color: rgba(40, 137, 150, 0.616);
     margin-left: 400px;
     margin-right: 400px;
     
+    
     color:white;
     font-weight: 550;
-    border: rgb(59, 116, 223) ridge 4px;
     padding-left:10px;
+    border: rgb(32, 65, 126) ridge 4px;
     border-radius: 5px;
 }
 
-ol>li
-{
 
+
+
+ol
+{
+    list-style-image: url('wskaznik.png');
 }
+
 
 
 
 .sub
 {
     font-weight:600;
-    background-color:rgb(41, 135, 158);
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,
+     rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
     font-family: 'Coda', cursive;    
 }
 
 .sub:hover
 {
-    background-color:rgb(56, 211, 250);
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,
+     rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
     cursor: pointer;
     border:  rgb(59, 116, 223) solid 2px;
 }
@@ -60,13 +69,16 @@ ol>li
 .sub1
 {
     font-weight:600;
-    background-color:rgb(41, 135, 158);
+   
     font-family: 'Coda', cursive; 
     margin-left: 10px;   
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, 
+    rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
 }
 .sub1:hover
 {
-    background-color:rgb(56, 211, 250);
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,
+    rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
     cursor: pointer;
     border:  rgb(59, 116, 223) solid 2px;
     color:white;
@@ -76,14 +88,16 @@ ol>li
 .sub2
 {
     font-weight:600;
-    background-color:rgb(41, 135, 158);
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,
+     rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
     font-family: 'Coda', cursive; 
     margin-left: 10px;
     
 }
 .sub2:hover
 {
-    background-color:rgb(56, 211, 250);
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,
+     rgba(41,184,229,1) 50%, rgba(44,185,229,1) 51%, rgba(188,224,238,1) 100%);
     cursor: pointer;
     border:  rgb(59, 116, 223) solid 2px;
     color:red;
