@@ -2,7 +2,7 @@ function stworzElement (nazwa) {
     var li = document.createElement("li");
     var span = document.createElement("span");
     var button = document.createElement("button");
-
+   
     span.innerText = nazwa;
     button.innerText = "Usuń";
     button.addEventListener("click", function (e) {
@@ -16,13 +16,29 @@ function stworzElement (nazwa) {
         oznaczJakoWykonane(li);
     });
 
-    return li; //zwraca li
+    return li; //zwraca 
 }
 
 function dodajZadanie (nazwa) {
     var element = stworzElement(nazwa); //muszą być () i jak ma to argumenty w zmiennej element mam to co zwróciła funkcja
     lista.appendChild(element);
+    tablica.push(nazwa);
+    wczytaj();
 }
+
+var tablica = [];
+var zadanie = [];  
+
+function wczytaj(nmb){
+        
+    for(var i=0; i<tablica.length; i++){
+    nmb = tablica[i];
+    localStorage.setItem("zadanie:"+nmb, nmb);// jeśli treść każdego zadania jest inna to ją chowa w pamięci
+    }  
+    zadanie.push(localStorage.getItem("zadanie:"+nmb));
+    return zadanie;
+}
+
 
 function oznaczJakoWykonane (element) {
     var posiada = element.classList.contains("done");
@@ -47,3 +63,4 @@ formularz.addEventListener("submit", function (e) {
     var wartosc = pole.value;
     dodajZadanie(wartosc);
 });
+
